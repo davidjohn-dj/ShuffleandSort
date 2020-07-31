@@ -1,0 +1,170 @@
+.container {
+    float: left;
+    width: 100%;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+    width: 100%;
+    padding: 15px 0px;
+    float: left;
+}
+
+.operation {
+    border: 1px solid transparent;
+    border-radius: 6px;
+    border-bottom: 5px solid #448daa;
+    background: #81c1da;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.flex-container > div {
+    margin: 0px;
+    text-align: center;
+}
+
+@media screen and (min-width: 376px) {
+    .operation {
+        margin-top: 30px;
+        width: 70%;
+    }
+    .operation:last-child {
+        margin-top: 10px;
+    }
+
+    .left {
+        width: 20%;
+        float: right;
+    }
+
+    .right {
+        width: 80%;
+        float: left;
+    }
+
+    .title {
+        font-size: 14px;
+        padding: 15px 0px;
+        border-bottom: 5px solid #c6c6c6;
+    }
+
+    .color1 {
+        background: #7496a5;
+    }
+
+    .color2 {
+        background: #438caa;
+    }
+
+    .color3 {
+        background: #33444d;
+    }
+
+    .color4 {
+        background: #bebebe;
+    }
+
+    .color5 {
+        background: #7597a6;
+    }
+
+    .container {
+        background: #f1f1f1;
+    }
+
+    .flex-container {
+        background-color: #000000;
+    }
+
+    .flex-container > div {
+        color: #f1f1f1;
+        width: 33.33%;
+        height: 200px;
+        line-height: 200px;
+        font-size: 90px;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 670px) {
+    .right {
+        margin-top: 30px;
+    }
+
+    .container {
+        background: transparent;
+    }
+
+    .flex-container {
+        background-color: transparent;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 18px;
+        padding: 15px 0px;
+        color: #FFFFFF;
+        background: #3a3a3a;
+    }
+
+    .flex-container > div {
+        color: #000000;
+        background: #f1f1f1;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .color1 {
+        border-left: 7px solid #7496a5;
+    }
+
+    .color2 {
+        border-left: 7px solid #438caa;
+    }
+
+    .color3 {
+        border-left: 7px solid #33444d;
+    }
+
+    .color4 {
+        border-left: 7px solid #bebebe;
+    }
+
+    .color5 {
+        border-left: 7px solid #7597a6;
+    }
+}
